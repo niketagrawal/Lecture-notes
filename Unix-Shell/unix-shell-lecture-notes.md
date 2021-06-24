@@ -23,6 +23,8 @@ The teaching style in these lecture notes has been derived from the [Software Ca
 [16:45 PM - 16:48 PM] Summary and pointers on where to go from here? <br/>
 [16:48 PM - 17:00 PM] Feedback from the learners + Q&A <br/>
 
+The lesson is delivered mainly as a type along with the learners. Slides are used only to facilitate the lesson introduction and as an aid to explain the key concepts using figures. There are dedicated helpers to assist the learners in the breakout rooms
+during the exercise session and answer their questions on the chat in the main room. You can learn more about the role of a helper in this workshop in [this document](https://doi.org/10.5281/zenodo.4730727).
 
 ### Introducing the Shell [10 min]
 
@@ -33,7 +35,9 @@ The teaching style in these lecture notes has been derived from the [Software Ca
 
 #### Part 2: Launch the shell together with the learners [5 min]
 
-- After telling the learners how to launch the shell, the instructor sets up command history. The explanation of this terminal history is not part of the lesson.
+- After telling the learners how to launch the shell, the instructor sets up command history as per the instructions borrowed from the [command history set up documentation
+provided by the 4TUResearchData](https://github.com/4TUResearchData-Carpentries/documentation/blob/master/command-history.md). The explanation of this terminal history is not part of the lesson.
+
 On the main terminal
 ```
 export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
