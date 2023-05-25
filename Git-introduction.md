@@ -187,6 +187,69 @@ Note: We follow what git tells us to do till step 6. Instructor explains the con
 Link to exercise google doc: https://docs.google.com/presentation/d/17vM2uc_wvCcw7mVMqsNud71K_QZTlcXM4rD2DygkAtk/edit#slide=id.p
 
 
+
+- Answer
+    Source: https://github.com/manuGil/lecture-notes/blob/main/git-notes.md 
+    Create new repository, use the modify-add-commit cycle, and recover older versions.
+
+        Create and initialize a repository called ‘my-repo’.
+
+        $ mkdr my-repo
+        $ cd my-repo/
+        $ git init
+
+- Create a files research.txt with the sentence: Science is awesome
+
+```
+$ nano research.txt
+```
+
+- Inside the file type the following and save changes:
+
+`Science is awesome`
+
+- Add and commit the changes. Remember to use a meaning message.
+
+```shell
+$ git add research.txt
+$ git commit -m "add awesome science"
+```
+
+- Change sentence in ‘research.txt’ to: Science is messy
+```shell
+$ nano research.txt
+```
+
+- Change text to this and save changes:
+
+```shell
+Science is messy
+```
+
+- Add and commit.
+
+```shell
+$ git add research.txt
+$ git commit -m "change to messy science"
+```
+
+- Revert changes to the very first version of ‘research.txt’, and commit.
+
+```shell
+$ git log --oneline # find and copy ID of the firts commit
+$ git checkout <commit-ID> research.txt # revert changes 
+$ cat reseach.txt # check version has been recovered
+$ git commit -m "recover awesome science" # commit recovered version
+```
+
+- Check your history log; you should have 3 commits
+
+```shell
+$ git log # print full log
+$ git log --graph # print log as text-graph
+$ git log --oneline # print short version of log
+```
+
 ### Remotes in GitHub [25 min]
 
 1. Objectives and questions [1 min]
