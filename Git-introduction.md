@@ -1,3 +1,7 @@
+Instructor notes for the Git introduction lesson of the Software Carpentry. 
+
+The teaching style in these lecture notes has been derived from the Software Carpentry. The lecture notes make use of the [Introduction to version control](https://swcarpentry.github.io/git-novice/aio.html) lesson material of software carpentry distributed under the CC By 4.0 license.
+
 ### Program
 
 [12:45 PM - 13:00 PM] Opening <br/>
